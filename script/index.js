@@ -37,6 +37,6 @@ playgame = () => {
     console.log(`You chose: ${humanChoice}`);
     console.log(`Computer chose: ${computerChoice}`);
     console.log(determinewinner(humanChoice, computerChoice));
-    playgame();
+   
 }
-
+// playgame();
