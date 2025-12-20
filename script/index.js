@@ -17,9 +17,9 @@ gethumanchoice = (userInput) => {
 determinewinner = (humanChoice, computerChoice) => {
     if (humanChoice === computerChoice) {
         return 'It\'s a tie!';
-    }   
+    }
     else if (
-        (humanChoice === 'rock' && computerChoice === 'scissors') ||    
+        (humanChoice === 'rock' && computerChoice === 'scissors') ||
         (humanChoice === 'paper' && computerChoice === 'rock') ||
         (humanChoice === 'scissors' && computerChoice === 'paper')
     ) {
@@ -37,6 +37,16 @@ playgame = () => {
     console.log(`You chose: ${humanChoice}`);
     console.log(`Computer chose: ${computerChoice}`);
     console.log(determinewinner(humanChoice, computerChoice));
-   
+
 }
 // playgame();
+const button = document.getElementById("playBtn");
+const section = document.getElementById("showgame");
+
+button.addEventListener("click", () => {
+    if (section.style.display === "none") {
+        section.style.display = "flex";
+    } else {
+        section.style.display = "none";
+    }
+});

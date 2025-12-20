@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RCP</title>
-    <link rel="stylesheet" href="/style/index.css">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style/index.css">
 </head>
 
 <body>
-    <script src="script/index.js"></script>
+
     <section class="container">
         <div class="main">
-            <h1>Welcome to Rock Paper Scissors!
-            </h1>
-            <h3>
-                Instructions:
-            </h3>
+            <h1>Rock Paper Scissors</h1>
+            <h3>How to Play</h3>
 
             <ul>
-                <li>&rarr; Rock beats Scissors</li>
-                <li>-> Scissors beats Paper</li>
-                <li>-> Paper beats Rock</li>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
             </ul>
-
         </div>
-        <div class="game">
-            <button>
-                Play Game
-            </button>
-            <button>
-                View Scores
-            </button>
 
+        <div class="game">
+            <button class="play-btn" id="playBtn">Play Game</button>
+            <button class="score-btn">View Scores</button>
         </div>
     </section>
 
-</body>
+    <section class="rps" id="showgame">
+        <div class="player">
+            <h2>You</h2>
+            <div class="images">
+                <img src="images/rock.jpg" alt="rock">
+                <img src="images/paper.jpg" alt="paper">
+                <img src="images/scissor.png" alt="scissor">
+            </div>
+        </div>
 
+        <div class="player">
+            <h2>Computer</h2>
+            <div class="images">
+                <img src="images/rock.jpg" alt="rock">
+                <img src="images/paper.jpg" alt="paper">
+                <img src="images/scissor.png" alt="scissor">
+            </div>
+        </div>
+    </section>
+    <section class="score">
+        <div>
+            <ul>
+                <li>score </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="script/index.js"></script>
+</body>
 </html>
