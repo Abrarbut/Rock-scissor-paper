@@ -21,9 +21,14 @@ body {
     max-width: 800px;
     margin-top: 40px;
     padding: 30px;
-    border-radius: 25px;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
 }
 
 .main h1 {
@@ -107,4 +112,15 @@ body {
 .images img:hover {
     transform: scale(1.15);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Additional styles for responsiveness and hover effects */
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .container {
+        width: 100%;
+    }
 }
